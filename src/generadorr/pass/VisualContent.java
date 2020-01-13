@@ -7,14 +7,14 @@ import java.awt.Toolkit;
  *
  * @author Eduardo
  */
-public class VentanaPrincipal extends javax.swing.JFrame {
+public class VisualContent extends javax.swing.JFrame {
     
     /**
-     * Creates new form VentanaPrincipal
+     * Creates new form PrincipalV
      */
-    public VentanaPrincipal() {
-       setIconImage(Toolkit.getDefaultToolkit().getImage(VentanaPrincipal.class.getResource("icono.png")));
-       initComponents();
+    public VisualContent() {
+        setIconImage(Toolkit.getDefaultToolkit().getImage(VisualContent.class.getResource("icono.png")));
+        initComponents();
     }
 
     /**
@@ -38,14 +38,19 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         botonGenerar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        C4es4r = new javax.swing.JButton();
+        mD5 = new javax.swing.JButton();
+        jMenuBar = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("R-Pass");
-        setMaximumSize(null);
-        setMinimumSize(null);
-        setResizable(false);
+        getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(27, 27, 27));
         jPanel1.setMaximumSize(null);
@@ -135,9 +140,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(123, Short.MAX_VALUE)
+                .addContainerGap(134, Short.MAX_VALUE)
                 .addComponent(txtGenerada, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(124, Short.MAX_VALUE))
+                .addContainerGap(134, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -155,12 +160,16 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(27, 27, 27));
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Cifrado", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 1, 14), new java.awt.Color(254, 254, 254))); // NOI18N
 
-        jButton2.setText("Caesar");
-        jButton2.setEnabled(false);
+        C4es4r.setText("Caesar");
+        C4es4r.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C4es4rActionPerformed(evt);
+            }
+        });
 
-        jButton3.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
-        jButton3.setText("MD5 / SHA");
-        jButton3.setEnabled(false);
+        mD5.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        mD5.setText("MD5 / SHA");
+        mD5.setEnabled(false);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -169,17 +178,17 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3))
+                    .addComponent(C4es4r, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(mD5))
                 .addGap(72, 72, 72))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(36, 36, 36)
-                .addComponent(jButton2)
+                .addComponent(C4es4r)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton3)
+                .addComponent(mD5)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -209,36 +218,65 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(90, 60, 608, 353);
+
+        jMenu1.setText("Archivo");
+
+        jMenuItem3.setText("Gestionar Base de datos");
+        jMenu1.add(jMenuItem3);
+
+        jMenuItem4.setText("Salir");
+        jMenu1.add(jMenuItem4);
+
+        jMenuBar.add(jMenu1);
+
+        jMenu2.setText("Herramientas");
+
+        jMenuItem1.setText("Copiar");
+        jMenu2.add(jMenuItem1);
+
+        jMenuItem2.setText("Editar");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem2);
+
+        jMenuBar.add(jMenu2);
+
+        jMenu3.setText("Ayuda");
+        jMenuBar.add(jMenu3);
+
+        setJMenuBar(jMenuBar);
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonGenerarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonGenerarActionPerformed
-       txtGenerada.setText(null);
+        txtGenerada.setText(null);
         if (botonRecomendado.isSelected()){
             txtGenerada.setText(String.valueOf(contraGeneradaRecomend(16)));
-       }
-       if (botonLetrasNumeros.isSelected()){
-           txtGenerada.setText(String.valueOf(contraGeneradaAlphaNum(16)));
-       } 
-       if (botonLetras.isSelected()) {
+        }
+        if (botonLetrasNumeros.isSelected()){
+            txtGenerada.setText(String.valueOf(contraGeneradaAlphaNum(16)));
+        }
+        if (botonLetras.isSelected()) {
             txtGenerada.setText(String.valueOf(contraGeneradaAlpha(16)));
-       }
-       if (botonNumeros.isSelected()) {
+        }
+        if (botonNumeros.isSelected()) {
             txtGenerada.setText(String.valueOf(contraGeneradaNum(16)));
-       }
+        }
     }//GEN-LAST:event_botonGenerarActionPerformed
+
+    private void C4es4rActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C4es4rActionPerformed
+
+    }//GEN-LAST:event_C4es4rActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -257,36 +295,47 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VisualContent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VisualContent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VisualContent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VisualContent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> {
-            new VentanaPrincipal().setVisible(true);
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new VisualContent().setVisible(true);
+            }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton C4es4r;
     private javax.swing.JButton botonGenerar;
     private javax.swing.JRadioButton botonLetras;
     private javax.swing.JRadioButton botonLetrasNumeros;
     private javax.swing.JRadioButton botonNumeros;
     private javax.swing.JRadioButton botonRecomendado;
     private javax.swing.ButtonGroup botonesOp;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenuBar jMenuBar;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JButton mD5;
     private javax.swing.JTextField txtGenerada;
     // End of variables declaration//GEN-END:variables
 }
