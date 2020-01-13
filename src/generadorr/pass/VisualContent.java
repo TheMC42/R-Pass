@@ -36,7 +36,6 @@ public class VisualContent extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         txtGenerada = new javax.swing.JTextField();
         botonGenerar = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         C4es4r = new javax.swing.JButton();
         mD5 = new javax.swing.JButton();
@@ -50,32 +49,31 @@ public class VisualContent extends javax.swing.JFrame {
         jMenu3 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("R-Pass 1.0.0");
+        setMaximumSize(null);
+        setMinimumSize(null);
+        setPreferredSize(new java.awt.Dimension(626, 405));
+        setResizable(false);
         getContentPane().setLayout(null);
 
-        jPanel1.setBackground(new java.awt.Color(27, 27, 27));
         jPanel1.setMaximumSize(null);
 
-        jPanel2.setBackground(new java.awt.Color(27, 27, 27));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Opciones", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 1, 14), new java.awt.Color(254, 254, 254))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Opciones", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 1, 14))); // NOI18N
 
         botonesOp.add(botonLetras);
         botonLetras.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
-        botonLetras.setForeground(new java.awt.Color(254, 254, 254));
         botonLetras.setText("Sólo letras");
 
         botonesOp.add(botonNumeros);
         botonNumeros.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
-        botonNumeros.setForeground(new java.awt.Color(254, 254, 254));
         botonNumeros.setText("Sólo números");
 
         botonesOp.add(botonLetrasNumeros);
         botonLetrasNumeros.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
-        botonLetrasNumeros.setForeground(new java.awt.Color(254, 254, 254));
         botonLetrasNumeros.setText("Letras y números");
 
         botonesOp.add(botonRecomendado);
         botonRecomendado.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
-        botonRecomendado.setForeground(new java.awt.Color(254, 254, 254));
         botonRecomendado.setSelected(true);
         botonRecomendado.setText("Recomendado");
 
@@ -111,8 +109,7 @@ public class VisualContent extends javax.swing.JFrame {
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(27, 27, 27));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Password", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 1, 14), new java.awt.Color(254, 254, 254))); // NOI18N
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Password", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 1, 14))); // NOI18N
 
         txtGenerada.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         txtGenerada.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -125,10 +122,6 @@ public class VisualContent extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Trebuchet MS", 0, 12)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(254, 254, 254));
-        jLabel1.setText("v 1.0.0");
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -136,9 +129,7 @@ public class VisualContent extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(botonGenerar, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(102, 102, 102)
-                .addComponent(jLabel1)
-                .addContainerGap())
+                .addGap(167, 167, 167))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(134, Short.MAX_VALUE)
                 .addComponent(txtGenerada, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -152,13 +143,9 @@ public class VisualContent extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(botonGenerar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel1))
         );
 
-        jPanel4.setBackground(new java.awt.Color(27, 27, 27));
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Cifrado", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 1, 14), new java.awt.Color(254, 254, 254))); // NOI18N
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Cifrado", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 1, 14))); // NOI18N
 
         C4es4r.setText("Caesar");
         C4es4r.addActionListener(new java.awt.event.ActionListener() {
@@ -219,7 +206,9 @@ public class VisualContent extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(90, 60, 608, 353);
+        jPanel1.setBounds(10, 10, 608, 353);
+
+        jMenuBar.setBackground(new java.awt.Color(27, 27, 27));
 
         jMenu1.setText("Archivo");
 
@@ -252,6 +241,7 @@ public class VisualContent extends javax.swing.JFrame {
         setJMenuBar(jMenuBar);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonGenerarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonGenerarActionPerformed
@@ -322,7 +312,6 @@ public class VisualContent extends javax.swing.JFrame {
     private javax.swing.JRadioButton botonNumeros;
     private javax.swing.JRadioButton botonRecomendado;
     private javax.swing.ButtonGroup botonesOp;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
